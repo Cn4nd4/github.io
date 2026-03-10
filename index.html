@@ -45,6 +45,14 @@ color:#38bdf8;
 
 .hero{
 padding:120px 0;
+display:flex;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
 }
 
 .hero h1{
@@ -60,6 +68,14 @@ margin-top:15px;
 opacity:.8;
 }
 
+.profile{
+width:200px;
+height:200px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+}
+
 .btn{
 display:inline-block;
 margin-top:25px;
@@ -69,6 +85,16 @@ color:#020617;
 border-radius:8px;
 text-decoration:none;
 font-weight:600;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+color:#38bdf8;
+text-decoration:none;
+margin-right:15px;
 }
 
 .section{
@@ -99,6 +125,12 @@ padding:30px;
 border-radius:12px;
 border:1px solid #1e293b;
 margin-bottom:30px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+border:1px solid #38bdf8;
 }
 
 footer{
@@ -130,14 +162,25 @@ border-top:1px solid #1e293b;
 
 <section class="hero">
 
-<h1>Olá, eu sou <span>Fernanda Caroline,</span></h1>
+<img src="img/foto.jpg" alt="Fernanda Caroline" class="profile">
+
+<div class="hero-text">
+
+<h1>Olá, eu sou <span>Fernanda Caroline</span></h1>
 
 <p>
-Analista de Dados Sênior especializado em transformar dados em decisões estratégicas.
+Analista de Dados especializada em transformar dados em decisões estratégicas.
 Experiência em análise estatística, visualização e machine learning.
 </p>
 
 <a class="btn" href="#projetos">Ver Projetos</a>
+
+<p class="social">
+<a href="https://linkedin.com/in/Carolinemarques">LinkedIn</a>
+<a href="https://github.com/Cn4nd4">GitHub</a>
+</p>
+
+</div>
 
 </section>
 
@@ -148,7 +191,7 @@ Experiência em análise estatística, visualização e machine learning.
 
 <p>
 
-Analista de Dados Sênior com experiência em análise exploratória,
+Analista de Dados com experiência em análise exploratória,
 modelagem de dados, construção de dashboards e desenvolvimento de
 pipelines de dados.
 
